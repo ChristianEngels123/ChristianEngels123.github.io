@@ -1,22 +1,41 @@
+/* Professional Document Page Styles */
 .doc {
 	display: block;
 	position: relative;
 	top: 144px;
-	left: 300px;
-	max-width: 77.5%;
-	width: auto;
-	padding-bottom: 40px;
+	left: 280px;
+	width: calc(100% - 330px);
+	padding: 30px;
+	padding-bottom: 60px;
+	z-index: 1;
 }
 
 .doc img {
 	display: block;
 	position: relative;
 	max-width: 100%;
-	width: auto;
+	width: 100%;
 	height: auto;
 	margin: auto;
-	z-index: -1;
+	z-index: 1;
 	border-style: solid;
-	border-width: 10px;
-	border-color: #004d00;
+	border-width: 8px;
+	border-color: #1e3a5f;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease;
+}
+
+.doc img:hover {
+	transform: scale(1.02);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+	.doc {
+		left: 0;
+		width: 100%;
+		padding: 20px;
+	}
 }

@@ -1,78 +1,105 @@
+/* Professional Navigation Bar Styles */
 .heading {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 10px;
+	padding: 15px 10px;
 	color: white;
-	background-color: #008000;
+	background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8c 100%);
 	text-align: center;
-	border-bottom-style: solid;
-	border-bottom-width: 5px;
-	border-bottom-color: #004d00;
+	border-bottom: 3px solid #0891b2;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+}
+
+.heading h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.heading .subtitle {
+	margin: 5px 0 0 0;
+	font-size: 0.9em;
+	color: #cbd5e1;
+	font-weight: 300;
 }
 
 nav {
 	height: 100%;
 	width: 250px;
 	position: fixed;
-	z-index: 1;
+	z-index: 99;
 	top: 94px;
 	left: 0;
-	background-color: #008000;	
+	background-color: #f8fafc;
 	padding-top: 20px;
 	overflow-x: hidden;
-	border-right-style: solid;
-	border-right-width: 5px;
-	border-right-color: #004d00;
+	border-right: 3px solid #1e3a5f;
+	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
 }
 
 nav img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
-	width: 200px;
-	height: 200px;
+	margin-bottom: 15px;
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
+	object-fit: cover;
 }
 
 nav a, .dropdown-proj, .dropdown-cert {
-	padding: 6px 8px 6px 16px;
+	padding: 12px 16px;
 	text-decoration: none;
-	color: black;
+	color: #475569;
 	display: block;
 	border: none;
-	background: none;
+	background: transparent;
 	width: 100%;
 	text-align: left;
 	cursor: pointer;
 	outline: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
 }
 
 nav a:hover:not(.active), .dropdown-proj:hover:not(.dropactive), .dropdown-cert:hover:not(.dropactive) {
-	background-color: black;
-	color: white;
+	background-color: #e2e8f0;
+	color: #1e3a5f;
+	left: 5px;
+	border-left: 3px solid #0891b2;
 }
 
-nav a.active{
-	background-color: #004d00;
+nav a.active {
+	background-color: #1e3a5f;
 	color: white;
+	border-left: 4px solid #0891b2;
 }
 
 .dropactive {
-	background-color: #006600;
-	color: white;
+	background-color: #e0f2fe;
+	color: #1e3a5f;
+	border-left: 4px solid #0891b2;
 }
 
 .proj-container {
 	display: none;
-	padding-left: 8px;
+	padding-left: 0;
+	background-color: #f1f5f9;
 }
 
 .cert-container {
 	display: none;
-	padding-left: 8px;
+	padding-left: 0;
+	background-color: #f1f5f9;
+}
+
+.proj-container a, .cert-container a {
+	padding-left: 32px;
+	font-size: 0.95em;
 }
 
 .fa-caret-down {
