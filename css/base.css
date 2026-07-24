@@ -1,0 +1,9 @@
+/* base.css */
+:root {
+	--accent-teal: #0891b2;
+	--accent-navy: #1e3a5f;
+	--card-radius: 8px;
+	--card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	--card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+	--transition-fast: 0.2s ease;
+}
