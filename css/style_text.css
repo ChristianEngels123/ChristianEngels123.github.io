@@ -4,38 +4,37 @@
 }
 
 h1 {
-	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Segoe UI', system-ui, Helvetica, Arial, sans-serif;
 	font-size: 2em;
 	margin: 0;
 	color: white;
 }
 
 h2 {
-	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Segoe UI', system-ui, Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
 	text-decoration: underline;
-	text-decoration-color: #0891b2;
+	text-decoration-color: var(--accent-teal);
 	text-decoration-thickness: 2px;
 	text-underline-offset: 6px;
 	margin-top: 20px;
 	margin-bottom: 10px;
-	color: #1e3a5f;
+	color: var(--accent-navy);
 }
 
 h3 {
-	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Segoe UI', system-ui, Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
 	margin-top: 15px;
 	color: #475569;
 }
 
 body {
-	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-family: 'Segoe UI', system-ui, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	background-color: #f8fafc;
 	color: #334155;
 	line-height: 1.6;
-	overflow: vertical;
 	margin: 0;
 	padding: 0;
 }
@@ -50,13 +49,13 @@ button {
 }
 
 a {
-	color: #0891b2;
+	color: var(--accent-teal);
 	text-decoration: none;
-	transition: color 0.3s ease;
+	transition: color var(--transition-fast);
 }
 
 a:hover {
-	color: #1e3a5f;
+	color: var(--accent-navy);
 	text-decoration: underline;
 }
 
